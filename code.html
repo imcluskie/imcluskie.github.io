@@ -85,46 +85,100 @@
             </form>
           </div>
         </nav>
+        <!--Start of blog section-->
+  <div><br /><br /><br /></div>
+  <div>
+    <main role="main" class="container">
+    <div class="row">
+      <div class="col-md-12 blog-main">
+  
+        <div class="blog-post">
+          <h2 class="blog-post-title">CODE reading Questions</h2>
+          <p class="blog-post-meta">by Ian McLuskie</p>
+  
+          <p>Below is a series of reading questions based off of the book CODE by Charles Petzold:</p>
+          <hr>
+          <p>Chapter 11<br />
+            1. Briefly describe the four gates explained in Chapter 11. Describe the behavior of each gate based on the input values to the gate.<br />
+            <br />
+            A:  
+            AND gate: an AND gate is a gate where at least two relays are connected in sequence and in such a way that in order for the gate to give off a charge, each switch on each of the relays must be on.  <br />
+            OR gate: an OR gate is a gate where at least two relays are connected to an output in parallel and in such a way that if any of the switches on any of the relays are on  it will give off a charge. <br /> 
+            NOR gate: a NOR gate is a gate where at least two relays are connected in sequence and such a way that if any of the switches on any of the relays are on, the gate will not give off a charge. Meaning that in order for the gate to give off a charge, both relays must be off.<br />
+            NAND: a NAND gate is a gate where at least two relays are connected in parallel and in such a way that if any one of the switches on the relay is off, it will give off a charge.<br />
+            <br />
+            <br />
+            Chapter 12<br />
+            1. A half adder is built from how many "sub components" and has how many inputs and outputs?<br />
+            <br />
+            A:  There are 4 components (2 OR gates, a NAND gate, and an AND gate), or 2 components (XOR gate, and an AND gate) depending on how you count them. There is a total of 2 user inputs, the switches, and 2 outputs, the lights.<br />
+            <br />
+            2. A full adder is built from how many "sub components" and has how many inputs and outputs?<br />
+            <br />
+            A: A full adder is built from 9 components (5 OR gates, 2 NAND gates, and 2 AND gates), 5 components (2 XOR gates, 2AND gates, and 1 OR gate), or 3 components (2 Half-Adders, and 1 OR gate), depending on how you count it. There is a total of 3 inputs and 2 outputs<br />
+            <br />
+            3.How many total inputs and outputs are there for an 8-bit adding circuit?<br />
+            <br />
+            A: There are 17 inputs including the carry, and 9 outputs, including the carry.<br />
+            <br />
+            4. How many total transistors are needed for the ripple version of the 8-bit adder?<br />
+            <br />
+            A: 144 transistors are needed.<br />
+            Chapter 13<br />
+            Design the following circuits with Logisim and post a snapshot of the circuit (a jing video  of showing the circuit in action would be nice).<br />
+            Half Adder and Full Adder<br />
+            8 Bit Adder (In Circuit section)<br />
+            8 Bit Adder with the Ones' Complement circuit and the Sub input to the circuit for subtraction (In Circuit section)<br />
+            <br />
+            Chapter 14<br />
+            Design the following circuits with Logisim and post a snapshot of the circuit (a jing video of showing the circuit in action would be nice).<br />
+            Adding machine . A bit of a challenge (In Circuit section)<br />
+            Edge Triggered D FlipFlop (In Circuit section)<br />
+            8 Bit ripple counter (In Circuit section)<br />
+            <br />
+            Chapter 15<br />
+            1. Define byte.<br />
+            A: A ‘byte’ is 8 bits of data. A bit either being a 0 or a 1. The reason of organizing bits in groups of 8 is largely arbitrary but most likely came about when IBM used that system for their system/360 business computers.<br />
+            <br />
+            2. What is the range of an unsigned byte? A signed two's complement byte?
+            A: A byte, represented by 8 binary digits can range from the values 00000000 to 1111111. Counting in binary an unsigned byte can represent a value of 0 to 255. While a signed two’s complement byte, using the farthest digit to the left to indicate a positive or negative, can represent the numbers -128 through 127<br />
+            <br />
+            3. What does the X in the following binary number represent 1010X10101?<br />
+            A: I could not find the answer in the text of the book.<br />
+            <br />
+            4. What is the base 16 number system called?<br />
+            A: Hexadecimal. Though often just abbreviated to “Hex.” Dec meaning 10, and Hex meaning 6.<br />
+            <br />
+            5. Why is base 16 a good choice for representing binary numbers?<br />
+            A: Because it is extremely easy to convert back and forth between binary and hexadecimal numbers. But also more specifically because a hexadecimal can be represented by 4 bits, which divides perfectly into bytes, which represent 8 bits each. So you can very easily convert 2 hexadecimal digits into a full binary byte. <br />
+
+            6. What base 16 number is 101011000011? What is an easy way to determine this without using a calculator?
+            A: AC3 (1010Binary= 10Decimal = AHexadecimal; 1100Binary = 12decimal = CHexadecimal;  0011Binary= 3Decimal= 3Hexadecimal.) The easiest way to figure it out without using a calculator is to divide the binary into sets of 4, convert to decimal, convert to hexadecimal then put the hexadecimal digits that represent the sets of 4 bits back into order (like above).<br />
+            <br />
+            7. What does the X represent in the following base 16 number D4AXF0?<br />
+            A: I could not find the answer in the text of the book.<br />
+            <br />
+            8. The book describes how to convert decimal to base 2 or base 16. Research and describe a technique that allows conversion of decimal to any base (2-36).<br />
+            A: Converting a decimal to a base requires the following process:<br />
+            Take the decimal value of the number you’re trying to convert, and divide it by the base. Then, take the remainder of that value and put it in the digit column farthest to the left. Take the quotient and do this process again, putting the next remainder into the digit column second to the left and so on.<br />
+            <br />
+            Chapter 16<br />
+            1. What do the prefix names kilo, mega, giga, tera, and peta represent in bytes and what were the Greek origins of the words?<br />
+            A: Kilo in greek (and the metric system) means 1000, however, a Kilobyte is actually 1024 bytes, more specifically 2^10. Mega in greek refers to the value of kilo*kilo  (1000*1000,) or 1,000,000. While a megabyte follows the same principal, but instead it is the value of a kilobyte*kilobyte (1024*1024) or 1,048,576. Transferring from Mega to Giga goes by the same principal. Giga in greek is mega*1000, (1,000,000,000 and) gigabyte is  megabyte*1024 (1,073,741,8240. This process continues for each step up, making, in greek: 1 Tera = 1000 Giga, 1 Peta = 1000 Tera; and in the computer: 1 Terabyte = 1024 Gigabytes, 1 Petabyte = 1024 Terabytes, etc. etc.<br />
+            The actual definitions in greek are: Kilo= “1000,” Giga = “Giant,” Tera = “Monster,” Peta = “5.”<br />
+            <br />
+            2. At the end of Chapter 16 the author reminds the reader about something that is "very important," what is this?<br />
+            A: The author reminds us that, starting in chapter 11, he stopped “indicat[ing] that every relay is connected to some kind of supply of electricity.” Meaning that if you have a large series of information stored in a series of Random Access Memory based relays, once you turn the power off, all that information is completely lost.<br />
+            <br />
+          <blockquote>
+  
+      </div><!-- /.blog-main -->
+  
+     
+    </div><!-- /.row -->
+  
+  </main><!-- /.container --></div>
+  <!---End of Blog Section-->
       </body>
       
       
-      <u1>
-    <div>
-        
-      <h1>CODE</h1>
-        <h2>CODE</h2>
-        <h3>By Charles Petzold</h3>
-
-        <p>The following are guided reading questions:
-          Chapters 1-10 describes basic concepts and history building up to digital logic. <br />
-
-Chapter 11<br />
-1. Briefly describe the four gates explained in Chapter 11. Describe the behavior of each gate based on the input values to the gate.<br />
-<br />
-A:  
-AND gate: an AND gate is a gate where at least two relays are connected in sequence and in such a way that in order for the gate to give off a charge, each switch on each of the relays must be on.  <br />
-OR gate: an OR gate is a gate where at least two relays are connected to an output in parallel and in such a way that if any of the switches on any of the relays are on  it will give off a charge. <br /> 
-NOR gate: a NOR gate is a gate where at least two relays are connected in sequence and such a way that if any of the switches on any of the relays are on, the gate will not give off a charge. Meaning that in order for the gate to give off a charge, both relays must be off.<br />
-NAND: a NAND gate is a gate where at least two relays are connected in parallel and in such a way that if any one of the switches on the relay is off, it will give off a charge.<br />
-<br />
-<br />
-Chapter 12<br />
-1. A half adder is built from how many "sub components" and has how many inputs and outputs?<br />
-<br />
-A:  There are 4 components (2 OR gates, a NAND gate, and an AND gate), or 2 components (XOR gate, and an AND gate) depending on how you count them. There is a total of 2 user inputs, the switches, and 2 outputs, the lights.<br />
-<br />
-2. A full adder is built from how many "sub components" and has how many inputs and outputs?<br />
-<br />
-A: A full adder is built from 9 components (5 OR gates, 2 NAND gates, and 2 AND gates), 5 components (2 XOR gates, 2AND gates, and 1 OR gate), or 3 components (2 Half-Adders, and 1 OR gate), depending on how you count it. There is a total of 3 inputs and 2 outputs<br />
-<br />
-3.How many total inputs and outputs are there for an 8-bit adding circuit?<br />
-<br />
-A: There are 17 inputs including the carry, and 9 outputs, including the carry.<br />
-<br />
-4. How many total transistors are needed for the ripple version of the 8-bit adder?<br />
-<br />
-A: 144 transistors are needed.
-        </p>
-        
-      </div>
-    </u1>
