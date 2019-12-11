@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Inevitable Pain</title>
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
   integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -65,12 +65,16 @@
     <div class="col-md-12 blog-main">
 
       <div class="blog-post">
-        <h2 class="blog-post-title">Sample blog post</h2>
+        <h2 class="blog-post-title">Inevitable Pain Summary</h2>
         <p class="blog-post-meta">by Ian McLuskie</p>
 
-        <p>This is a _________ of the _______ titled <a href="#">(title)</a> by _________ </p>
+        <p>This is a summary of the paper titled <a href="https://cs.uwaterloo.ca/~dberry/FTP_SITE/reprints.journals.conferences/tcre.painpaper.pdf">Inevitable Pain</a> by Daniel M. Berry. </p>
         <hr>
-        <p>Cum sociis natoque penatibus et magnis nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Berry starts with the idea that, within the process of developing software, there comes a point in every development method in which a step is “painful enough that they habitually avoid or postpone the step.” When Berry was a kid, designing a school dance matchmaking software, it began simple, but quickly began spiraling out of control. As the “ever-changing requirements” of the code as he added more and more sections to it. It began to pile up and cascade into a multitude of problems and new considerations in order for the program to be functional. While modern software development has more concrete systems in place to deal with this, it still can’t fully address the root problem of the “ever-changing requirements.” Compounding this problem is that it’s almost impossible to fully understand everything within the software that might be relevant to address the new requirements. <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The methods used to mitigate this problem each do so in their own way, but each contain a core flaw or painful step that make them less than ideal. <br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Information hiding involves making smaller modules of the code that are modified independently. However, information hiding often involves problems across multiple modules that lead to needing to restructure the code into different sets of modules. The build and fix model involves building completely then fixing later, but this can cause many problems to cascade out of control unless the program is small enough to be built by one person. The waterfall model involves attempting to fully understand the requirements of the following stage before moving on, this, however, often leads to excessive documentation and the need to backtrack. Structured programming is seemingly the best, but in modification requires detailed analysis of endless ripple effects, all of which are hard to predict. Extreme programming forgoes pre-planning in favor of creating test-cases for existing code as the process goes on. Unfortunately, this method often leads to the need to create new architecture, throw out existing code, or stop the progress altogether in order to refactor. One method involves using a program generator to abstract the process more, but the same problem occurs when needing to correlate and deal with all the high-level code your working with.<br />
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No method is perfect, but inevitably, completely following a method, even through the painful parts is the best way to do it.<br />
+          </p>
         <blockquote>
 
     </div><!-- /.blog-main -->
